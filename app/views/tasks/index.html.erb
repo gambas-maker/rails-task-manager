@@ -1,0 +1,10 @@
+<h1>Toutes vos taffs le sang 💯</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= task.title %></li>
+    <%= link_to 'Details', task_path(task) %>
+  <% end %>
+</ul>
+
+<%= link_to 'Create a new task ?', new_task_path %>
+
